@@ -1,30 +1,44 @@
 import React, { Component } from 'react';
-import { Card, Icon } from 'semantic-ui-react'
+import PropTypes from 'prop-types';
+import { Card, Icon, Image } from 'semantic-ui-react'
 
-const extra = (
-  <div>
-    <a>
-        <Icon name='plus' />
-    </a>
-    <a>
-        <Icon name='minus' />
-    </a> 
-    8 votes
-  </div>
-)
 
 class Post extends Component {
+
+  // static propTypes = {
+  //   PostMeta: PropTypes.object.isRequired,
+  // }
+
     render() {
+
+      const {postMeta} = this.props;
+
         return (          
 
-            <Card
-            image='https://react.semantic-ui.com/images/avatar/large/matthew.png'
-            header='Elliot Baker'
-            meta='Friend'
-            description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
-            extra={extra}
-          />
-
+          <Card>
+            <Image src={postMeta.image} />
+            <Card.Content>
+              <Card.Header>{postMeta.title}</Card.Header>
+              <Card.Meta>
+                <span className='date'>{postMeta.date}</span>
+              </Card.Meta>
+              <Card.Description>{postMeta.description}</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+            <div className="card-meta">
+              <a>
+                  <Icon name='plus'/>
+              </a>
+              <a>
+                  <Icon name='minus'/>
+              </a> 
+              {postMeta.rating} votes
+              <a>
+                  <Icon name='comment alternate'/> {postMeta.comments} comments
+              </a> 
+            </div>
+            </Card.Content>
+          </Card>
         );
     }
 

@@ -9,6 +9,10 @@ background-color: yellow;
 .main-page{
   margin-top: 58px;
 }
+.card-meta{
+  justify-content: space-around;
+  display: flex;
+}
 `;
 
 class App extends Component {
