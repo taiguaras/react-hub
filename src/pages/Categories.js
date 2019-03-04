@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
-import PostList from '../components/PostList';
+import Layout from '../components/Layout';
 import { Button } from 'semantic-ui-react'
 
-// import { Link } from 'react-router-dom';
-import Layout from '../components/Layout';
-// import { Dropdown, Input } from 'semantic-ui-react'
+class Categories extends Component {
+    render() {
+        return (
 
-class Main extends Component {
-
-      render() {
-
-        return(       
             <Layout>
                 <div className="main-page">
                     <div className="intro-content"> 
@@ -18,12 +13,14 @@ class Main extends Component {
                     </div>
                     <Button>Rating</Button>  
                     <Button>Date</Button>     
-                    <PostList/>                    
+                    Categories                   
                 </div>    
-            </Layout>             
+            </Layout>     
+
         );
-        
     }
+
+
 }
 
-export default Main;
+export default Categories;

@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Main from '../pages/Main';
+import Categories from '../pages/Categories';
 
 const Routes = () => (
     <BrowserRouter>    
         <Switch>
             <Route exact path="/" component={Main} />       
             
-            {/* <Route path="/stocks/:symbol" component={Detail} />  
+            {/* <Route path="/stocks/:symbol" component={Detail} />  */}
 
-            <Route path="/list" component={List} />   */}
+            <Route path="/categories" component={Categories} />   
 
         </Switch>
     </BrowserRouter>
