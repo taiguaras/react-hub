@@ -12,7 +12,9 @@ class PostList extends Component {
             image:'https://react.semantic-ui.com/images/avatar/large/matthew.png',
             rating:'5',
             comments:'8',
-            date:'20/02/2019'
+            date:'20/02/2019',
+            good:'3',
+            bad:'2'
           };
       
         return (

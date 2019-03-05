@@ -5,9 +5,9 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 
 class Post extends Component {
 
-  // static propTypes = {
-  //   PostMeta: PropTypes.object.isRequired,
-  // }
+  static propTypes = {
+    PostMeta: PropTypes.object.isRequired,
+  }
 
     render() {
 
@@ -16,7 +16,7 @@ class Post extends Component {
         return (          
 
           <Card>
-            <Image src={postMeta.image} />
+            <Image src={postMeta.image? postMeta.image :'https://react.semantic-ui.com/images/avatar/large/matthew.png'} />
             <Card.Content>
               <Card.Header>{postMeta.title}</Card.Header>
               <Card.Meta>
