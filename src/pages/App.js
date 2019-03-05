@@ -6,7 +6,7 @@ const Div = styled.div`
 .intro-content{
 background-color: yellow;   
 }
-.main-page{
+.page{
   margin-top: 58px;
 }
 .card-meta{

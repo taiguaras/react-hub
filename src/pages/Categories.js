@@ -7,7 +7,7 @@ class Categories extends Component {
         return (
 
             <Layout>
-                <div className="main-page">
+                <div className="categories-page">
                     <div className="intro-content"> 
                         <h2>Welcome to React Hub!!</h2>             
                     </div>

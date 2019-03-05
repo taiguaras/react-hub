@@ -11,7 +11,7 @@ class Post extends Component {
 
     render() {
 
-      const {postMeta} = this.props;
+      const { postMeta } = this.props;
 
         return (          
 

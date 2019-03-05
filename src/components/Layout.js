@@ -7,7 +7,9 @@ class Layout extends Component {
     return (
         <React.Fragment>
             <Navbar />
+            <div className='page'>
                 {this.props.children}
+            </div>
             <Footer />
         </React.Fragment>
     );
